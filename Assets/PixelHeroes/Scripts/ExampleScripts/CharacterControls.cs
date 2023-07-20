@@ -26,6 +26,7 @@ namespace Assets.PixelHeroes.Scripts.ExampleScripts
 
         public void Update()
         {
+            RunSpeed = GameManager.instance.gameSpeed*0.05f;
             if (Input.GetKeyDown(KeyCode.A)) Character.Animator.SetTrigger("Attack");
             else if (Input.GetKeyDown(KeyCode.J)) Character.Animator.SetTrigger("Jab");
             else if (Input.GetKeyDown(KeyCode.P)) Character.Animator.SetTrigger("Push");
